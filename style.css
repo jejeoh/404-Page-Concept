@@ -11,6 +11,15 @@ body{
     align-items: center;
     justify-content: center;
 }
+div.reve{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+a.ba{
+    color: #fff;
+    font-size: 3vh;
+}
 h1.q{
     font-family: 'Bangers', cursive;
     font-size: 20vh;
@@ -56,6 +65,7 @@ div.bon{
     height: 80vh;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 div.card{
     width: 23%;
@@ -140,3 +150,41 @@ div.card:nth-child(2){
  div.card:nth-child(3){
     left: 71%; 
  }
+
+@media screen and (max-width: 550px) {
+    div.card:nth-child(1){
+        left: auto;
+        top: 3vh;
+     }
+     div.card:nth-child(2){
+        left: auto;
+        top: 30vh;
+     }
+     div.card:nth-child(3){
+        left: auto;
+        top : 57vh;
+     }
+     div.card{
+        width: 80%;
+        height: 20vh;
+        border-radius: 10px;
+        overflow: hidden;
+        position: absolute;
+        transition: 2s;
+    }
+    div.front img{
+        width: auto;
+        height: 80%;
+    }
+    h2.b{
+        color: #fff;
+        font-size: 5vh;
+        transform: rotate(-20deg);
+    }
+    div.reve{
+        left: auto;
+    }
+    a.ba{
+        font-size: 2.5vh;
+    }
+}

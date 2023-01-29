@@ -46,6 +46,11 @@ function choice(id) {
     
 
 }
+
+setInterval(()=>{
+    widecr = screen.width;
+}, 2000)
+
 function getele(ele){
     if(ele == 0){
         return one;
@@ -61,14 +66,17 @@ function rand(){
     while(fir == seg){
         fir = Math.floor(Math.random() * 3);
         seg = Math.floor(Math.random() * 3);
-        console.log(fir);
     }
-    console.log(fir);
-    console.log(seg);
-    console.log(getele(seg).offsetLeft);
-    var pos = getele(seg).offsetLeft;
-    getele(seg).style.left = getele(fir).offsetLeft + "px";
-    getele(fir).style.left = pos + "px";
+    if(widecr <= 550){
+        var pos = getele(seg).offsetTop;
+        getele(seg).style.top = getele(fir).offsetTop + "px";
+        getele(fir).style.top = pos + "px";
+    }else{
+        var pos = getele(seg).offsetLeft;
+        getele(seg).style.left = getele(fir).offsetLeft + "px";
+        getele(fir).style.left = pos + "px";
+    }
+    
 
 }
 
