@@ -159,6 +159,18 @@ div.card:nth-child(2){
  }
 
 @media screen and (max-width: 550px) {
+    img.q{
+    width: 25%;
+}
+img.q:nth-child(3){
+    cursor: pointer;
+    transition: .4s;
+}
+img.q:nth-child(3):hover{
+    margin-left: -3%;
+    margin-right: -3%;
+    width: 31%;
+}
     div.card:nth-child(1){
         left: auto;
         top: 3vh;
