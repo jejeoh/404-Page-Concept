@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 *{
     margin: 0;
     font-family: Arial Black, Arial Bold, Gadget, sans-serif;
@@ -20,10 +20,17 @@ a.ba{
     color: #fff;
     font-size: 3vh;
 }
-h1.q{
-    font-family: 'Bangers', cursive;
-    font-size: 20vh;
-    color: #fff;
+img.q{
+    width: 15%;
+}
+img.q:nth-child(3){
+    cursor: pointer;
+    transition: .4s;
+}
+img.q:nth-child(3):hover{
+    margin-left: -1.5%;
+    margin-right: -1.5%;
+    width: 18%;
 }
 div.z{
     display: flex;
@@ -73,7 +80,7 @@ div.card{
     border-radius: 10px;
     overflow: hidden;
     position: absolute;
-    transition: 2s;
+    transition: 1.5s;
 }
 div.front{
     width: 100%;
