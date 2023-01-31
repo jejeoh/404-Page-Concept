@@ -81,6 +81,7 @@ div.card{
     overflow: hidden;
     position: absolute;
     transition: 1.5s;
+    box-shadow: 7px 7px 7px #000;
 }
 div.front{
     width: 100%;
