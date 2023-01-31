@@ -92,7 +92,7 @@ function start(){
         var time = 0;
         var add = 0;
         while(add != 10){
-            time = time + 1200;
+            time = time + 1300;
             setTimeout(function exe(){
                 rand();
             }, time);
@@ -104,7 +104,7 @@ function start(){
             two.classList.toggle('get');
             tree.classList.toggle('get');
             statu = true;
-        }, 1320);
+        }, 14500);
     }, 3500)
     
 
