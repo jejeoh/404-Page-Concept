@@ -190,7 +190,7 @@ img.q:nth-child(3):hover{
         border-radius: 10px;
         overflow: hidden;
         position: absolute;
-        transition: 2s;
+        transition: 1s;
     }
     div.front img{
         width: auto;
